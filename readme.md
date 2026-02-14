@@ -26,5 +26,22 @@
   9.hub.docker  
   10.install python:3.6.15
   11.run the shell docker run -it python:3.6.15
+  12.docker build -t analytics-api -f Dockerfile .
+  13.docker run -p 8000:8000 analytics-api
+  14-automaticaly chagne dockerfile compse watch
 
 }
+
+
+becomes
+
+- `docker compose up --watch`
+- `docker compose down` or `docker compose down -v` (to remove volumes)
+- `docker compose run app /bin/bash` or `docker compose run app python`
+``` :contentReference[oaicite:0]{index=0}
+cat mai.py is show the code inside the file 
+
+Let me know if you want it in plain text without the backticks!
+::contentReference[oaicite:1]{index=1}
+
+
