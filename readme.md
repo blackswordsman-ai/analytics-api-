@@ -45,3 +45,6 @@ Let me know if you want it in plain text without the backticks!
 ::contentReference[oaicite:1]{index=1}
 
 
+httpx and requests  are the same actualy doing api calls
+
+
