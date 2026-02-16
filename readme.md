@@ -47,4 +47,10 @@ Let me know if you want it in plain text without the backticks!
 
 httpx and requests  are the same actualy doing api calls
 
+# Build the image
+docker build -t analytics-api .
+
+# Run the container
+docker run -p 8000:8000 analytics-api
+
 
