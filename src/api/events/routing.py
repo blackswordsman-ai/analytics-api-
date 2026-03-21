@@ -5,8 +5,8 @@ from .schema import (
     EventCreateSchema,
     EventUpdateSchema
 )
-
 router = APIRouter()
+from src.api.db.config import DATABASE_URL
 
 #/api/events
 @router.get('/', response_model=EventListSchema)
@@ -34,7 +34,7 @@ def create_event(payload:EventCreateSchema):
 @router.get('/{event_id}', response_model=EventSchema)
 def get_event(event_id: int):
     
-
+    print(os.environ.get("DATABASE_URL",DATABASE_URL))
     data=payload.model_dump()       
     # single row
     return {

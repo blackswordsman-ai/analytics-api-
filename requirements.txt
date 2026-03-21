@@ -5,3 +5,4 @@ timescaledb
 pydantic
 sqlalchemy
 sqlmodel
+python-decouple #for environment variables

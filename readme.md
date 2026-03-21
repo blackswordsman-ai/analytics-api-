@@ -6,6 +6,11 @@
 6 – Production Dockerfile for FastAPI
 7 – Docker-based FastAPI Hello World
 
+
+
+source venv/bin/activate
+
+
 {
 1.first create a workspace
 2.create a virtual environment
@@ -51,4 +56,10 @@ docker build -t analytics-api .
 docker run -p 8000:8000 analytics-api
 
 
-```
+```"
+
+#env
+
+PORT=
+HOST=
+PROJ_NAME=
